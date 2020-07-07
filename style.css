@@ -1,0 +1,113 @@
+html {
+  background: #7c9e2d;
+}
+
+.head {
+  width: 20vw;
+  bottom: 0;
+  position: relative;
+  height: 20vw;
+  background: white;
+  border-radius: 50%;
+  margin: 10vw auto 0 auto;
+}
+
+.ear {
+  position: absolute;
+  width: 5vw;
+  top: 0;
+  height: 4.5vw;
+  background: black;
+  border-radius: 50%;
+}
+
+.ear.left {
+  left: 1.5vw;
+}
+
+.ear.right {
+  right: 1.5vw;
+}
+
+.face {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  bottom: 0;
+  background: white;
+}
+
+.eye {
+  position: absolute;
+  top: 0;
+  width: 7.5vw;
+  height: 4vw;
+  border-radius: 50%;
+  background: black;
+  margin-top: 6vw;
+}
+
+.eye.left {
+  left: 2vw;
+  transform: rotate(-70deg);
+}
+
+.eye.right {
+  right: 2vw;
+  transform: rotate(70deg);
+}
+
+.inner {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 40%;
+  border-radius: 50%;
+  background: white;
+}
+
+.inner.right {
+  left: 50%;
+}
+
+.inner.left {
+  right: 50%;
+}
+
+.nose {
+  width: 15%;
+  height: 10%;
+  background: black;
+  border-radius: 20%;
+  margin: 11vw auto 0 auto;
+}
+
+.mouth {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 15%;
+  width: 50%;
+  margin: 14vw auto;
+  border-top: 0.5vw solid black;
+  border-radius: 100%;
+}
+
+h1 {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: black;
+  font-family: "Kavivanar", cursive;
+  font-size: 5vw;
+  margin: 4vw 0 0 32vw;
+}
+
+@media screen and (max-width: 500px) {
+  .mouth,
+  h1 {
+    visibility: hidden;
+  }
+}
